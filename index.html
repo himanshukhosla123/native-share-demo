@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NATIVE SHARE DEMO</title>
+</head>
+<body>
+    <div>
+        <h1>Native share Demo</h1>
+        <button onclick="nativeshare()">Click me</button>
+    </div>
+    <script>
+        function nativeshare(){
+        if (navigator.share) {
+            navigator.share({
+                title: 'TCS IT Analyst review by Shibashisa Padhi',
+                text:'“I would give an overall rating of ★☆☆☆☆-1/5 to TCS.” Read my detailed review of TCS on AmbitionBox.',
+                url:     'https://www.ambitionbox.com/reviews/tcs-reviews?rid=4456774',
+            })
+                .then(() => alert('Successful share'))
+                .catch((error) => alert('Error sharing', error));
+            }
+        else
+            alert('native share not avialable');
+        }
+    </script>
+</body>
+</html>
