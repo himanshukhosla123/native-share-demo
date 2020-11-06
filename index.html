@@ -9,6 +9,16 @@
     <div>
         <h1>Native share Demo</h1>
         <button onclick="nativeshare()">Click me</button>
+
+        <div 
+          id="g_id_onload"
+          data-client_id="1084158702155-361dg7as15u06o86l41siov9jfhoqg4i.apps.googleusercontent.com"
+          data-callback="gooleYoloLogin"
+          data-skip_prompt_cookie="usr_data"
+        >
+        </div>
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        
     </div>
     <script>
         function nativeshare(){
@@ -23,6 +33,73 @@
             }
         else
             alert('native share not avialable');
+        }
+
+        var messaging = null;
+
+        window.addEventListener('load', function () {
+        const firebaseLibs = ['https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js', 'https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js'];
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+            .then(function (swReg) {
+                // load scripts
+                firebaseLibs.forEach(function (src, index) {
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.async = true;
+                script.src = src;
+                // on last element
+                if (index == firebaseLibs.length - 1) {
+                    script.onload = function () {
+                    initFirebase(swReg)
+                    };
+                }
+                document.body.appendChild(script);
+                });
+
+            })
+            .catch(function (error) {
+                console.error('Service worker registration failed', error);
+            });
+        }
+        });
+
+        function initFirebase(swReg) {
+        const firebaseConfig = {
+            apiKey: "AIzaSyC0SZJkHFX-fQ7NrsxdI4l4mGwYuY4l7P8",
+            projectId: "ambox-test",
+            messagingSenderId: "1084158702155",
+            appId: "1:1084158702155:web:848be33534a293ef4bd3ce",
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        messaging = firebase.messaging();
+
+        // Handle incoming messages. Called when:
+        // - a message is received while the app has focus
+        // - the user clicks on an app notification created by a service worker
+        //   `messaging.setBackgroundMessageHandler` handler.
+        messaging.onMessage((payload) => {
+            appendMessage(payload);
+        });
+
+        initNotifIntent(swReg);
+        }
+
+        function initNotifIntent(swReg) {
+        messaging
+            .getToken({
+            serviceWorkerRegistration: swReg,
+            vapidKey: 'BDsDvun9QUYxy0wTQwODquoCylXn6WcNMABGjn03hbh6u5h6eP-4LHlwSQpVSsPv1VDQXcxWrO3nDB60ggqXAFY'
+            })
+            .then((currentToken) => {
+            console.log(currentToken);
+            })
+            .catch((err) => {
+            console.error(err);
+            });
         }
     </script>
 </body>
