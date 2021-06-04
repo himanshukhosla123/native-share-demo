@@ -1,106 +1,514 @@
-<!DOCTYPE html>
+
+<!Doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NATIVE SHARE DEMO</title>
+   <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>AmbitionBox - Company Reviews, Salaries by company, Interview Questions, Salary Calculator
+	| AmbitionBox</title>
+	<meta name="robots" content="ALL"/>
+
+	<link rel="canonical" href="https://www.ambitionbox.com"/>
+
+<link rel="icon" type="image/png" sizes="16x16" href="https://static.ambitionbox.com/alpha/img/supporting-images/browser_icon_16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://static.ambitionbox.com/alpha/img/supporting-images/browser_icon_32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="https://static.ambitionbox.com/alpha/img/supporting-images/browser_icon_48x48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://static.ambitionbox.com/alpha/img/supporting-images/browser_icon_96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="https://static.ambitionbox.com/alpha/img/supporting-images/browser_icon_144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://static.ambitionbox.com/alpha/img/supporting-images/browser_icon_192x192.png">
+
+<link rel="apple-touch-icon" href="https://static.ambitionbox.com/alpha/img/supporting-images/browser_icon_192x192.png">
+<meta name="msapplication-square310x310logo" content="https://static.ambitionbox.com/alpha/img/supporting-images/browser_icon_192x192.png">
+
+	<meta name="description" content="With more than 27 Lakh reviews, 90 Lakh salaries, and 4 Lakh companies discover and evaluate great places to work."/>
+	<link rel="preconnect" href="https://static.ambitionbox.com" crossorigin>
+<meta name="copyright" content="2021 AmbitionBox"/>
+<meta name="application-name" content="AmbitionBox"/>
+<meta property="fb:admins" content="100001438127755,100000444923785"/>
+<meta property="og:title" content="AmbitionBox - Company Reviews, Salaries by company, Interview Questions, Salary Calculator"/>
+<meta property="og:site_name" content="AmbitionBox"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://static.ambitionbox.com/img/ab-brand.png"/>
+<meta property="og:description" content="With more than 27 Lakh reviews, 90 Lakh salaries, and 4 Lakh companies discover and evaluate great places to work."/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="AmbitionBox - Company Reviews, Salaries by company, Interview Questions, Salary Calculator"/>
+<meta name="twitter:description" content="With more than 27 Lakh reviews, 90 Lakh salaries, and 4 Lakh companies discover and evaluate great places to work."/>
+<meta name="twitter:image" content="https://static.ambitionbox.com/img/ab-brand.png"/>
+<meta
+property="fb:app_id" content="712617688793459"/>
+<!--Google login meta info-->
+<meta name="google-signin-client_id" content="462822053404-hphug4pkahqljh2tc96g35at47o4isv2.apps.googleusercontent.com">
+
+
+<script type="text/javascript">
+	if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) 
+document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js"><\/script>');
+</script>
+
+<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+<!--[if lte IE 8]>
+<script>if(!Array.prototype.indexOf){Array.prototype.indexOf=function(c,d){for(var b=(d||0),a=this.length;b<a;b++){if(this[b]===c){return b}}return -1}};</script>
+<![endif]-->
+<!--[if lt IE 8]>
+<script src=http://html5shim.googlecode.com/svn/trunk/html5.js></script>
+<script src=js/respond.min.js></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src=http://html5shim.googlecode.com/svn/trunk/html5.js></script>
+<script src=js/respond.min.js></script>
+<![endif]-->
+
+	<meta name="content-language" content="EN"/>
+<meta name="author" content="www.ambitionbox.com"/>
+<meta name="resource-type" content="document"/>
+<meta name="distribution" content="GLOBAL"/>
+<meta name="revisit-after" content="1 day"/>
+<meta name="rating" content="general"/>
+<meta name="pragma" content="no-cache"/>
+<meta name="classification" content="Company:Reviews,Salaries,Benefits,Overview,Interview Questions"/>
+
+
+<link rel="preload" href="https://static.ambitionbox.com/fonts/proxima-nova/400.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="https://static.ambitionbox.com/fonts/proxima-nova/700.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="https://static.ambitionbox.com/fonts/proxima-nova/600.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="https://static.ambitionbox.com/fonts/proxima-nova/500.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+<link rel="preload" href="https://static.ambitionbox.com/fonts/fonticons/fonts/icomoon.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+      <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#5670fb">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#5670fb">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5670fb">
+    <!-- Anti-flicker snippet (recommended)  -->
+<style>
+    .async-hide {
+        opacity: 0 !important
+    }
+</style>
+<script type="text/javascript">
+    (function (a, s, y, n, c, h, i, d, e) {
+        s.className += ' ' + y;
+        h.start = 1 * new Date;
+        h.end = i = function () {
+            s.className = s.className.replace(RegExp(' ?' + y), '')
+        };
+        (a[n] = a[n] || []).hide = h;
+        setTimeout(function () {
+            i();
+            h.end = null
+        }, c);
+        h.timeout = c;
+    })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {'GTM-579PLWW': true});
+    
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        },
+        i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-56667153-1', 'auto');
+    ga('require', 'GTM-579PLWW');
+    ga('send', 'pageview');
+    ga('amboxnew.send', 'pageview');
+
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T3PMM75');
+    
+
+    /** Page Bounce tracking script */
+    (function() {
+        var timeSpent = 1;
+        function gaSendTimer() {
+            if (typeof ga === 'function') {
+              ga('send', 'event', 'pageTimeBounce', (timeSpent*20)+'s' );
+            }
+            timeSpent++;
+        }
+        var gaTimerEvent = setInterval(gaSendTimer, 20000);
+        setTimeout(function(){ if (typeof ga === 'function') { ga('send', 'event', 'pageTimeBounce', '30s' ); } }, 30000);
+        setTimeout(function(){ clearInterval(gaTimerEvent); }, 1800000);
+    })();
+
+</script>
+
+
+<link rel="stylesheet" href="https://static.ambitionbox.com/css/partials/home_page_new.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+<link rel="manifest" href="https://www.ambitionbox.com/_nuxt/manifest.json">
+
+<style>
+    .logged-in{
+      display: none;
+    }
+</style>
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name" : "AmbitionBox.com",
+      "url": "https://www.ambitionbox.com",
+      "logo": "https://static.ambitionbox.com/alpha/img/supporting-images/browser_icon_192x192.png",
+      "sameAs" : [ 
+        "https://www.facebook.com/followambitionbox",
+        "https://www.linkedin.com/company/ambition-box",
+        "https://twitter.com/_ambitionbox",
+        "https://plus.google.com/+Ambitionboxofficial",
+        "https://www.youtube.com/user/ambitionbox"
+        ] 
+    }
+</script>
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.ambitionbox.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.ambitionbox.com/search?query={search_term_string}&&category=company",
+    "query-input": "required name=search_term_string"
+  }
+}
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "AmbitionBox",
+  "alternateName": "Ambition Box",
+  "url": "https://www.ambitionbox.com"
+}
+</script>
+
+
 </head>
 <body>
-    <div>
-        <h1>Native share Demo</h1>
-        <button onclick="nativeshare()">Click me</button>
+  <div class="sliding-sticky-menu "  
+	id="headerWrapper"><div class="awards-banner-section" id="awardsBannerSection" onclick="window.location='/best-places-to-work-in-india-2021'" style="display:none;"><div class="awards-banner"><div class="logo-wrap"><img
+					src="https://static.ambitionbox.com/static/awards/black-theme/ambox-gold-leaves-logo.svg"
+					alt="AmbitionBox"
+                    width="46"
+					height="34"
+				/><p>Best places to work in India 2021</p></div><div class="days-left-section"><div class="item days"><div class="base-timer" style="width: 33px; height: 33px"><svg class="_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g class="_circle"><circle
+                                class="_path-elapsed"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                style="stroke: #312710"
+                            ></circle><path
+                                stroke-dasharray='0 283'
+                                class="_path-remaining"
+                                style="color: #ffc226"
+                                d="
+                                    M 50, 50
+                                    m -45, 0
+                                    a 45,45 0 1,0 90,0
+                                    a 45,45 0 1,0 -90,0
+                                "
+                            ></path></g></svg><span class="_label count" style="width: 33px; height: 33px"></span></div><p class="info"></p></div><div class="item hours"><div class="base-timer" style="width: 33px; height: 33px"><svg class="_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g class="_circle"><circle
+                                class="_path-elapsed"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                style="stroke: #312710"
+                            ></circle><path
+                                stroke-dasharray='0 283'
+                                class="_path-remaining"
+                                style="color: #ffc226"
+                                d="
+                                    M 50, 50
+                                    m -45, 0
+                                    a 45,45 0 1,0 90,0
+                                    a 45,45 0 1,0 -90,0
+                                "
+                            ></path></g></svg><span class="_label count" style="width: 33px; height: 33px"></span></div><p class="info"></p></div><div class="item minutes"><div class="base-timer" style="width: 33px; height: 33px"><svg class="_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g class="_circle"><circle
+                                class="_path-elapsed"
+                                cx="50"
+                                cy="50"
+                                r="45"
+                                style="stroke: #312710"
+                            ></circle><path
+                                stroke-dasharray='0 283'
+                                class="_path-remaining"
+                                style="color: #ffc226"
+                                d="
+                                    M 50, 50
+                                    m -45, 0
+                                    a 45,45 0 1,0 90,0
+                                    a 45,45 0 1,0 -90,0
+                                "
+                            ></path></g></svg><span class="_label count" style="width: 33px; height: 33px"></span></div><p class="info"></p></div></div><div class="ctas-wrapper"><a
+                class="voteForCta"
+                href="/contribute/company-review?campaign=awards2021_ratenow"
+                rel="nofollow noindex"
+                title="Rate your company"
+            >
+                Rate your company
+            </a><a
+                href="/best-places-to-work-in-india-2021"
+                class="knowMoreLink"
+                >Know more</a
+            ></div></div><div class="close" id="closeAwardsBanner"><i class="icon-close"></i></div></div><nav class="main-menu desktop "><nav class="left-section"><a href="/" class="logo_name"><img src="https://static.ambitionbox.com/static/logo.svg" onerror="this.onerror = null;this.src='https://static.ambitionbox.com/img/AB_logo_new.svg';" 
+			height="32"
+			width="26.5"/>AmbitionBox</a><a href="/list-of-companies" title="List of companies in India" class="link list" menu-link="list-of-companies">Companies</a><a href="https://www.ambitionbox.com/reviews" title="Company reviews by employees" class="link reviews" menu-link = "reviews">Reviews</a><a href="https://www.ambitionbox.com/salaries" title="Company Salaries" class="link salaries" menu-link = "salaries">Salaries</a><a href="https://www.ambitionbox.com/interviews" title="Interview Questions" class="link interviews" menu-link = "interviews">Interviews</a><a href="/jobs" title="Jobs" class="link jobs" menu-link = "jobs">Jobs</a><a href="https://www.ambitionbox.com/salaries/take-home-salary-calculator" title="Salary Calculator" class="link salary-calc" menu-link = "salaries/take-home-salary-calculator">Salary Calculator</a><a href="/best-places-to-work-in-india-2021" title="Best Places to Work in India" class="link awards" menu-link = "awards">Awards 2021 <span class="badge-small badge-orange awards">Coming soon!</span></a></nav><div class="right-section"><a href="/contribute" class="highlight" >+Contribute</a><a style="margin-right:0rem;margin-left:1.5rem;position:relative;top:-0.1rem" href="/user" class="logged-in"><img style="border-radius: 50%;" class="usr-thumbnail logged-in" src="https://static.ambitionbox.com/img/icons/profile_empty.svg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/img/icons/profile_empty.svg';" alt="User profile picture" id="userPicture" /></a><div class="user-detail-wrapper"><a class="js-user-menu logged-in border-right" id="userName"></a><div class="user-menu"><a class="user-menu-link" href="/user">Profile</a><a class="user-menu-link" href="/user-settings">Manage Preferences</a><a class="user-menu-link" href="/user/logout">Logout</a></div></div><a onclick="loginPopUp();" href="#" class="login not-logged-in menu_text border-right" >Login</a><a href="https://employer.ambitionbox.com" target="_blank" >Employer?</a></div></nav><div class="search_new sliding-search-bar "><form action="/search"  id="headerSearch"  class="searchForm"><div class="search-input-wrapper"><i class="icon icon-search"></i><input class="search_company_input js-menu-search" name="CompanyName" type="search" title="Enter a Company or Designation" value="" placeholder="Search by Company or Designation" 
+   	   	  onblur="this.placeholder = 'Search by Company or Designation'" autocomplete="off"></div><select style="border-radius:0px 0px;" class="select"><option value="CompanyReview">Reviews</option><option value="CompanyJobs" >Jobs</option><option value="InterviewPrep" >Interview Questions</option><option value="CompanyInfo" >About Company</option><option value="CompanySalaries" >Salaries</option><option value="CompanyBenefits" >Benefits</option></select><input type="submit" name="sbt" class="blue-btn-small" value="Search" onclick="formValidation(this,event);"></form></div></div><section class="cover_image_wrap" itemscope itemtype="http://schema.org/WPHeader"><div class="cover_image_content_wrap page-wrap" style="background-image: url('https://static.ambitionbox.com/img/homepage/buildings.svg');"><div class="cover_image_content"><h1 itemprop="headline">Discover <br/> Great Places to Work!</h1><div class="cover_image_text"><span itemprop="description">Company reviews. Salaries. Interviews. Jobs.</span></div></div><div class="search_new"><form action="/search" id="homeSearch" class="searchForm"><input class="search_company_input js-menu-search" name="CompanyName" type="text" value="" title="Enter a company name" placeholder="Search by Company or Designation" onfocus="this.placeholder = ''" 
+                          onblur="this.placeholder = 'Search by Company or Designation'" autocomplete="off"><select class="select"><option value="CompanyReview" selected>Reviews</option><option value="CompanyJobs">Jobs</option><option value="InterviewPrep">Interview Questions</option><option value="CompanyInfo">About Company</option><option value="CompanySalaries">Salaries</option><option value="CompanyBenefits">Benefits</option></select><div class="search-button"><input type="submit" name="sbt" class="blue-btn-small" value="Search" onclick="formValidation(this,event);"></div></form></div></div></section><section class="white_section "><div class="home_reviews"><div class="section_heading_wrap"><div class="titleCont"><h2 class="section_heading">Company reviews</h2><p class="section_subheading">Real employees share how it is to work at their company. Read reviews and make informed decisions.</p></div><a href="/reviews" class="section_view_all" title="View all reviews">View all</a></div><div class="slider_wrap"><ul id="reviewsSlider" class="slider_default"><li class="slider_item_wrap"><a href="/reviews/hdb-financial-services-reviews?rid=43755"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/hdb-financial-services-6193.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://lh6.googleusercontent.com/-asuXl52Ii_E/AAAAAAAAAAI/AAAAAAAAALA/cB7nECwJvCs/s96-c/photo.jpg" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Anupkumar Pandey
+                                                            (Current employee)
+                                                        </div><div class="user_profile">Senior Executive</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> Couligues are very good</div><div class="review_details"><b>Dislikes:</b> When I joined they told simple work after that here managers target is given to small we people executives and stoped lead supports mental torcher.connector targets are giving it is for managers but executives are forced to do this this is not simple connector should be graduates we are small executives we cannot do this here this job only like curior boy pizza delivery boy no office work.here after using 1 year they will increase target and file numbers outside source if not done hole months salary will + incentive will not come work is good but managers and ASM upper side people not want to do work more than 5 years after that we will not get any on role jobs we are the only agents so be careful while choosing the job.</div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 4"><div class="star-wrap"><div class="rated-stars" style="width: 79.8%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(8.2k Reviews)</span></div><div><span href="/reviews/hdb-financial-services-reviews?rid=43755" class="review_link">View Detailed</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/reviews/icici-bank-reviews?rid=9098"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/icici_bank.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://graph.facebook.com/1153405798096813/picture?type=small" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Banafsha Zahera
+                                                            (Current employee)
+                                                        </div><div class="user_profile">Assistant Manager</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> I took my job as my responsibility, giving service to my customer and bring profit to my bank , I worked both in team as well as Individual roles for Bank, using hard work but also using smart work job can be done </div><div class="review_details"><b>Dislikes:</b> Partiality in nature from seniors, jealousy from some colleagues are some dislike </div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 4"><div class="star-wrap"><div class="rated-stars" style="width: 80.6%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(16.5k Reviews)</span></div><div><span href="/reviews/icici-bank-reviews?rid=9098" class="review_link">View Detailed</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/reviews/hdfc-bank-reviews?rid=8834"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/hdfc.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://lh3.googleusercontent.com/-3UYaK3wYdgM/AAAAAAAAAAI/AAAAAAAAAAA/AAyYBF6gtinVDbZTz-2nqvs-x9jwUAMMUg/s96-c/photo.jpg" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">HIRAK ROY
+                                                            (Current employee)
+                                                        </div><div class="user_profile">Field Officer</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> I work for tractor loan recovery.i have to collect emi from defaulters only.regular payment is collected by other agency.</div><div class="review_details"><b>Dislikes:</b> No salary increment since last 3 years.</div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 4"><div class="star-wrap"><div class="rated-stars" style="width: 79.8%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(14.4k Reviews)</span></div><div><span href="/reviews/hdfc-bank-reviews?rid=8834" class="review_link">View Detailed</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/reviews/kotak-mahindra-reviews?rid=44690"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/kotak-mahindra-bank.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://graph.facebook.com/1706441246051509/picture?type=small" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Amit Thakkar
+                                                            (Current employee)
+                                                        </div><div class="user_profile">Manager</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> Grest culture, not stressful as other banks, great crowd</div><div class="review_details"><b>Dislikes:</b> Do not come to depts like Service Quality if you want to grow.or even least be happy ever</div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 3.8"><div class="star-wrap"><div class="rated-stars" style="width: 76.6%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(6.8k Reviews)</span></div><div><span href="/reviews/kotak-mahindra-reviews?rid=44690" class="review_link">View Detailed</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/reviews/vodafone-reviews?rid=12998"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/vodafone-idea.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://lh3.googleusercontent.com/-Bn7Gk5M0h0o/AAAAAAAAAAI/AAAAAAAAABA/TZhAUtNrG6I/s96-c/photo.jpg" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Mrinmay Chakraborty
+                                                            (Current employee)
+                                                        </div><div class="user_profile">Distribution Sales Executive</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> My job has given me experience to dealing with my retailers/customers and solve their problems.</div><div class="review_details"><b>Dislikes:</b> When I goin to work, I should have to wear a reflecting jacket.</div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 4.2"><div class="star-wrap"><div class="rated-stars" style="width: 83.8%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(10.8k Reviews)</span></div><div><span href="/reviews/vodafone-reviews?rid=12998" class="review_link">View Detailed</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/reviews/wipro-reviews?rid=5325"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/wipro.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://lh3.googleusercontent.com/a-/AOh14Ghcg9Hm7pq1rxYNOfPdA7GZiaN6-myoiIhKFLnfAbI=s96-c" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">mihir kar
+                                                            (Current employee)
+                                                        </div><div class="user_profile">PLSQL Developer</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> Wipro is a great place to start a career</div><div class="review_details"><b>Dislikes:</b> Bad management and lots of politics </div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 3.8"><div class="star-wrap"><div class="rated-stars" style="width: 76.6%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(12.3k Reviews)</span></div><div><span href="/reviews/wipro-reviews?rid=5325" class="review_link">View Detailed</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/reviews/genpact-reviews?rid=8321"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/genpact-india-pvt-limited.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://lh4.googleusercontent.com/-fpjY-fdLA1Q/AAAAAAAAAAI/AAAAAAAAAAA/AAyYBF6LFsTfGEJvPqiafTOBhbzMg3if-g/s96-c/photo.jpg" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Mounita Das
+                                                            (Current employee)
+                                                        </div><div class="user_profile">Process Associate</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> Nothing to like about this company</div><div class="review_details"><b>Dislikes:</b> Everything..... From the management to the employee everything is the worst....this company is enough to ruin ur carrier</div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 4"><div class="star-wrap"><div class="rated-stars" style="width: 80%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(10.4k Reviews)</span></div><div><span href="/reviews/genpact-reviews?rid=8321" class="review_link">View Detailed</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/reviews/tcs-reviews?rid=733"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/tcs.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://lh5.googleusercontent.com/-gUtiPp9Zpew/AAAAAAAAAAI/AAAAAAAAAAA/AHalGhr9wAkCGVsHogYsHZvYDO6u2tDoSg/s96-c/photo.jpg" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Ashish Singh
+                                                            (Current employee)
+                                                        </div><div class="user_profile">Engineer</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> GOOD PLACE TO WORK</div><div class="review_details"><b>Dislikes:</b> NOTHING,STAGNATE GROWTH</div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 4"><div class="star-wrap"><div class="rated-stars" style="width: 79.6%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(21.4k Reviews)</span></div><div><span href="/reviews/tcs-reviews?rid=733" class="review_link">View Detailed</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/reviews/reliance-jio-infocomm-reviews?rid=2325"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/reliance-jio-infocomm.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://lh3.googleusercontent.com/-Ql4XDTXwf38/AAAAAAAAAAI/AAAAAAAAAAA/AHalGhrNrmlG4CYGo7LZyUrTZPzr1_Rb9g/s96-c/photo.jpg" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Vatsal garg
+                                                            (Current employee)
+                                                        </div><div class="user_profile">Gis Engineer</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> Learning.
+Work was enjoyable.</div><div class="review_details"><b>Dislikes:</b> Salary.
+Growth opportunity.</div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 4"><div class="star-wrap"><div class="rated-stars" style="width: 79.2%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(9.9k Reviews)</span></div><div><span href="/reviews/reliance-jio-infocomm-reviews?rid=2325" class="review_link">View Detailed</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/reviews/infosys-reviews?rid=53"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/infosys.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://graph.facebook.com/10154077694462115/picture?type=small" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Geetanjali Mukherjee
+                                                            (Current employee)
+                                                        </div><div class="user_profile">System Engineer</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Likes:</b> The campus, the team, the technology (J2EE)</div><div class="review_details"><b>Dislikes:</b> I had to take up a Mainframe project, while it was not my core technology and I was not comfortable. Though it was a temporary arrangement for 1.5 years, I was not comfortable.</div></div><div class="review_footer"><div class="rate-wrap" title="Overall Rating 3.9"><div class="star-wrap"><div class="rated-stars" style="width: 77.8%"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div><div class="plain-stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div></div><span class="review_counts">(11k Reviews)</span></div><div><span href="/reviews/infosys-reviews?rid=53" class="review_link">View Detailed</span></div></div></div></a></li></ul><div class="slider_btns slider_prev hidden_control"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div><div class="slider_btns slider_next"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div></div></div></section><section class="white_section"><div class="home_reviews"><div class="section_heading_wrap"><div class="titleCont"><h2 class="section_heading">Company salaries</h2><p class="section_subheading">Search and compare average salaries by company, job title, and experience.</p></div><a href="/salaries" class="section_view_all"  title="View all salaries">View all</a></div><div class="slider_wrap"><ul id="salariesSlider" class="slider_default"><li class="slider_item_wrap" onclick="window.location='/salaries/axis-bank-salaries/manager'"><div class="slider_item"><div class="salary_wrap"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/axis_bank.jpg"
+          	        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Axis Bank logo"/><div class="salary_profile_wrap"><a href="salaries/axis-bank-salaries/manager"><div class="salary_profile">Manager</div></a><div class="salary_count">(3.4k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:28.350877192982%">
+                        ₹ 7.4L
+                    </div><div class="salary_bar"><div class="avg_indicator" style="left:40.350877192982%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 5.1L
+                        </span><span class="max_value">
+                        ₹ 10.8L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/salaries/hcl-technologies-salaries/analyst'"><div class="slider_item"><div class="salary_wrap"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/hcl-technologies-88.jpg"
+          	        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="HCL Technologies logo"/><div class="salary_profile_wrap"><a href="salaries/hcl-technologies-salaries/analyst"><div class="salary_profile">Analyst</div></a><div class="salary_count">(3k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:25.037037037037%">
+                        ₹ 3.1L
+                    </div><div class="salary_bar"><div class="avg_indicator" style="left:37.037037037037%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 2.1L
+                        </span><span class="max_value">
+                        ₹ 4.8L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/salaries/icici-bank-salaries/manager'"><div class="slider_item"><div class="salary_wrap"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/icici_bank.jpg"
+          	        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="ICICI Bank logo"/><div class="salary_profile_wrap"><a href="salaries/icici-bank-salaries/manager"><div class="salary_profile">Manager</div></a><div class="salary_count">(1.9k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:18.337078651685%">
+                        ₹ 8.7L
+                    </div><div class="salary_bar"><div class="avg_indicator" style="left:30.337078651685%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 6L
+                        </span><span class="max_value">
+                        ₹ 14.9L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/salaries/kotak-mahindra-bank-salaries/manager'"><div class="slider_item"><div class="salary_wrap"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/kotak-mahindra-bank.jpg"
+          	        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Kotak Mahindra Bank Ltd.. logo"/><div class="salary_profile_wrap"><a href="salaries/kotak-mahindra-bank-salaries/manager"><div class="salary_profile">Manager</div></a><div class="salary_count">(1.9k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:34.511627906977%">
+                        ₹ 6.2L
+                    </div><div class="salary_bar"><div class="avg_indicator" style="left:46.511627906977%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 4.2L
+                        </span><span class="max_value">
+                        ₹ 8.5L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/salaries/capgemini-salaries/analyst'"><div class="slider_item"><div class="salary_wrap"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/capgemini.jpg"
+          	        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Capgemini logo"/><div class="salary_profile_wrap"><a href="salaries/capgemini-salaries/analyst"><div class="salary_profile">Analyst</div></a><div class="salary_count">(1.7k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:44.25%">
+                        ₹ 3.6L
+                    </div><div class="salary_bar"><div class="avg_indicator" style="left:56.25%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 2.7L
+                        </span><span class="max_value">
+                        ₹ 4.3L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/salaries/teleperformance-salaries/analyst'"><div class="slider_item"><div class="salary_wrap"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/teleperformance-group.jpg"
+          	        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Teleperformance logo"/><div class="salary_profile_wrap"><a href="salaries/teleperformance-salaries/analyst"><div class="salary_profile">Analyst</div></a><div class="salary_count">(406 salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:32.444444444444%">
+                        ₹ 1.9L
+                    </div><div class="salary_bar"><div class="avg_indicator" style="left:44.444444444444%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 1.5L
+                        </span><span class="max_value">
+                        ₹ 2.4L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/salaries/genpact-salaries/software-engineer'"><div class="slider_item"><div class="salary_wrap"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/genpact-india-pvt-limited.jpg"
+          	        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Genpact logo"/><div class="salary_profile_wrap"><a href="salaries/genpact-salaries/software-engineer"><div class="salary_profile">Software Engineer</div></a><div class="salary_count">(341 salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:19.645569620253%">
+                        ₹ 6.1L
+                    </div><div class="salary_bar"><div class="avg_indicator" style="left:31.645569620253%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 3.6L
+                        </span><span class="max_value">
+                        ₹ 11.5L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/salaries/ibm-salaries/analyst'"><div class="slider_item"><div class="salary_wrap"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/ibm-global-services.jpg"
+          	        onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="IBM logo"/><div class="salary_profile_wrap"><a href="salaries/ibm-salaries/analyst"><div class="salary_profile">Analyst</div></a><div class="salary_count">(217 salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:23.245901639344%">
+                        ₹ 7.1L
+                    </div><div class="salary_bar"><div class="avg_indicator" style="left:35.245901639344%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 2.8L
+                        </span><span class="max_value">
+                        ₹ 15L
+                        </span></div></div></div></li></ul><div class="slider_btns slider_prev hidden_control"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div><div class="slider_btns slider_next"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div></div></div></section><section class="white_section"><div class="home_reviews"><div class="section_heading_wrap"><div class="titleCont"><h2 class="section_heading">Interviews</h2><p class="section_subheading">Read and practice interview questions and experiences shared by candidates who appeared for the interview.</p></div><a href="/interviews" class="section_view_all"  title="View all interviews">View all</a></div><div class="slider_wrap"><ul id="interviewsSlider" class="slider_default"><li class="slider_item_wrap"><a href="/interviews/capgemini-interview-questions?rid=27361"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/capgemini.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://graph.facebook.com/1889450827935677/picture?type=small" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Anisha Sharma</div><div class="user_profile">Software Engineer</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> How can you cut a rectangular cake in 8 symmetric pieces in three cuts? </div><div class="review_details"><b>Q2:</b> One question of sorting for a list of people belonging to different  cities and states.</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">81 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/interviews/hcl-technologies-interview-questions?rid=42962"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/hcl-technologies-88.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://graph.facebook.com/1804759586205546/picture?type=small" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Rohit Karmakar</div><div class="user_profile">Sccm Administrator</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> Questions was asked about software deployment and operating system deployment</div><div class="review_details"><b>Q2:</b> Salary will be discussed and HR will check your stability</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">45 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/interviews/tata-motors-interview-questions?rid=4549"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/tata-motors.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://media.licdn.com/mpr/mprx/0_mB1VmsnK7VhwlMXwhrqWm4B-70QkPxvwunF5m4v_KVtvuRCIGli9hZ3STl6srZNb7NAXTxF_ahbO" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Chirag Jain</div><div class="user_profile">GET</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> Have you done any technical Projects?</div><div class="review_details"><b>Q2:</b> what do you excite in Automobile industry?</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">16 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/interviews/amazon-interview-questions?rid=3874"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/amazon.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://graph.facebook.com/832931613447288/picture?type=small" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Anuj Gupta</div><div class="user_profile">SOFTWARE DEVELOPER</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> Print the level order traversal of the binary tree in the spiral form</div><div class="review_details"><b>Q2:</b> Given two array , one of size m+n and contains m element and other position are empty , 2nd array is of size n and contains n element. both array are sorted , now merge the second array to first one such that the resultant array is sorted. Expexte time complexity(m+n)</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">10 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/interviews/hdfc-bank-interview-questions?rid=5145"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/hdfc.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://static.ambitionbox.com/static/profile_empty.svg" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Jigar Naik</div><div class="user_profile">relationship manager - business banking</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> why should  we hire you</div><div class="review_details"><b>Q2:</b> tell us something about hdfc bank</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">6 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/interviews/infosys-interview-questions?rid=8280"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/infosys.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://graph.facebook.com/422037944657558/picture?type=small" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Nikita Srivastava</div><div class="user_profile">Graduate Trainee</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> how does an aeroplane flies?what is the mechanism etc</div><div class="review_details"><b>Q2:</b> finally any questions for me?</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">5 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/interviews/axis-bank-interview-questions?rid=8855"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/axis_bank.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://graph.facebook.com/923930657700743/picture?type=small" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Rajeev Choudhary</div><div class="user_profile">Risk Analyst</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> They asked about my internships, Projects I had done</div><div class="review_details"><b>Q2:</b> How many pizzas will be sold each month if Pizza Hut comes to IIT Kharagpur?</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">2 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/interviews/tech-mahindra-interview-questions?rid=4145"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/techmahindra.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://static.ambitionbox.com/static/profile_empty.svg" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">AKARSH</div><div class="user_profile">ASSOCIATE SOFTWARE ENGINEER</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> questions from hobbies etc mentioned in cv</div><div class="review_details"><b>Q2:</b> questions from dbms,c,c++,java</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">2 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/interviews/ibm-interview-questions?rid=3453"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/ibm-global-services.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://media.licdn.com/mpr/mprx/0_mLnj-ORAxtnLMP9Km3ba-gd30KtXRPBKuGCC-gZlhvQzXc8rGiQAyj2xAO-VZNny76NijVormYLE" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Piyush Raman</div><div class="user_profile">Project Trainee</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> Discussion on the project relating to system programming</div><div class="review_details"><b>Q2:</b> Some basic questions on Data Structures and their application</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">2 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li><li class="slider_item_wrap"><a href="/interviews/concentrix-corporation-interview-questions?rid=126779"><div class="slider_item"><img class="review_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/concentrix-corporation.jpg"
+          	onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/><div class="rev_user"><img src="https://lh5.googleusercontent.com/-Z_G2VlhYzhc/AAAAAAAAAAI/AAAAAAAAAXg/HmtC9ecRE7c/s96-c/photo.jpg" class="user_pic"
+                            onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/profile_empty.svg';"/><div class="user_details"><div class="user_name">Solomon Michael</div><div class="user_profile">Senior Technical Support Officer</div></div></div><div class="review_details_wrap"><div class="review_details"><b>Q1:</b> Can please take me through your resume?</div><div class="review_details"><b>Q2:</b> What&#039;s your salary expectation?
+Anything that reflects my qualification and experience so far.
+If the recruiter still insists to get an amount from you. Don&#039;t fall into that trap and answer with a ridiculous amount.
+Politely answer as per the companies norm.
+Because for joining a brand name is more than getting a hire package.
+Believe me guys you will clear the round.
 
-        <div 
-          id="g_id_onload"
-          data-client_id="1084158702155-361dg7as15u06o86l41siov9jfhoqg4i.apps.googleusercontent.com"
-          data-callback="gooleYoloLogin"
-          data-skip_prompt_cookie="usr_data"
-        >
-        </div>
-        <script src="https://accounts.google.com/gsi/client" async defer></script>
-        
-    </div>
-    <script>
-        function nativeshare(){
-        if (navigator.share) {
-            navigator.share({
-                title: 'TCS IT Analyst review by Shibashisa Padhi',
-                text:'“I would give an overall rating of ★☆☆☆☆-1/5 to TCS.” Read my detailed review of TCS on AmbitionBox.',
-                url:     'https://www.ambitionbox.com/reviews/tcs-reviews?rid=4456774',
-            })
-                .then(() => alert('Successful share'))
-                .catch((error) => alert('Error sharing', error));
-            }
-        else
-            alert('native share not avialable');
-        }
-
-        var messaging = null;
-
-        window.addEventListener('load', function () {
-        const firebaseLibs = ['https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js', 'https://www.gstatic.com/firebasejs/8.0.0/firebase-messaging.js'];
-
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/native-share-demo/sw.js')
-            .then(function (swReg) {
-                // load scripts
-                firebaseLibs.forEach(function (src, index) {
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.async = true;
-                script.src = src;
-                // on last element
-                if (index == firebaseLibs.length - 1) {
-                    script.onload = function () {
-                    initFirebase(swReg)
-                    };
-                }
-                document.body.appendChild(script);
-                });
-
-            })
-            .catch(function (error) {
-                console.error('Service worker registration failed', error);
-            });
-        }
-        });
-
-        function initFirebase(swReg) {
-        const firebaseConfig = {
-            apiKey: "AIzaSyC0SZJkHFX-fQ7NrsxdI4l4mGwYuY4l7P8",
-            projectId: "ambox-test",
-            messagingSenderId: "1084158702155",
-            appId: "1:1084158702155:web:848be33534a293ef4bd3ce",
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-
-        messaging = firebase.messaging();
-
-        // Handle incoming messages. Called when:
-        // - a message is received while the app has focus
-        // - the user clicks on an app notification created by a service worker
-        //   `messaging.setBackgroundMessageHandler` handler.
-        messaging.onMessage((payload) => {
-            appendMessage(payload);
-        });
-
-        initNotifIntent(swReg);
-        }
-
-        function initNotifIntent(swReg) {
-        messaging
-            .getToken({
-            serviceWorkerRegistration: swReg,
-            vapidKey: 'BDsDvun9QUYxy0wTQwODquoCylXn6WcNMABGjn03hbh6u5h6eP-4LHlwSQpVSsPv1VDQXcxWrO3nDB60ggqXAFY'
-            })
-            .then((currentToken) => {
-            console.log(currentToken);
-            })
-            .catch((err) => {
-            console.error(err);
-            });
-        }
-    </script>
-</body>
+Do not panic recruiter will not offer you 5-6k
+Either the offer will be the highest slab for experienced or the highest slab for freshers.</div></div><div class="review_footer"><div class="rate-wrap"><img src="https://static.ambitionbox.com/img/homepage/like.svg" class="like_icon"
+                             onerror="this.onerror=null;this.src='/img/homepage/like.svg';"/><span class="review_counts">1 people found it helpful!</span></div><div><span class="review_link">View all</span></div></div></div></a></li></ul><div class="slider_btns slider_prev hidden_control"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div><div class="slider_btns slider_next"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div></div></div></section><section class="white_section"><div class="home_reviews"><div class="section_heading_wrap"><div class="titleCont"><h2 class="section_heading">Designation Salaries</h2><p class="section_subheading">Get in-depth salary information based on location, experience and industry</p></div></div><div class="slider_wrap"><ul id="desigSalariesSlider" class="slider_default"><li class="slider_item_wrap" onclick="window.location='/profile/assistant-manager-salary'"><div class="slider_item"><div class="salary_wrap"><div class="salary_profile_wrap"><a href="profile/assistant-manager-salary" title="Assistant Manager Salary"><div class="salary_profile">Assistant Manager Salary</div></a><div class="salary_count">(247.6k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:25.333333333333%">
+                            ₹ 6L
+                        </div><div class="salary_bar"><div class="avg_indicator" style="left:33.333333333333%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 2.5L
+                        </span><span class="max_value">
+                        ₹ 13L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/profile/software-engineer-salary'"><div class="slider_item"><div class="salary_wrap"><div class="salary_profile_wrap"><a href="profile/software-engineer-salary" title="Software Engineer Salary"><div class="salary_profile">Software Engineer Salary</div></a><div class="salary_count">(227.9k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:10.666666666667%">
+                            ₹ 5.8L
+                        </div><div class="salary_bar"><div class="avg_indicator" style="left:18.666666666667%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 3L
+                        </span><span class="max_value">
+                        ₹ 18L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/profile/senior-soft-engineer-salary'"><div class="slider_item"><div class="salary_wrap"><div class="salary_profile_wrap"><a href="profile/senior-soft-engineer-salary" title="Senior Software Engineer Salary"><div class="salary_profile">Senior Software Engineer Salary</div></a><div class="salary_count">(163.4k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:22.882352941176%">
+                            ₹ 9.2L
+                        </div><div class="salary_bar"><div class="avg_indicator" style="left:30.882352941176%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 5L
+                        </span><span class="max_value">
+                        ₹ 18.6L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/profile/manager-salary'"><div class="slider_item"><div class="salary_wrap"><div class="salary_profile_wrap"><a href="profile/manager-salary" title="Manager Salary"><div class="salary_profile">Manager Salary</div></a><div class="salary_count">(125.2k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:28.073059360731%">
+                            ₹ 11L
+                        </div><div class="salary_bar"><div class="avg_indicator" style="left:36.073059360731%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 3.1L
+                        </span><span class="max_value">
+                        ₹ 25L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/profile/software-developer-salary'"><div class="slider_item"><div class="salary_wrap"><div class="salary_profile_wrap"><a href="profile/software-developer-salary" title="Software Developer Salary"><div class="salary_profile">Software Developer Salary</div></a><div class="salary_count">(120.5k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:13.379310344828%">
+                            ₹ 5.1L
+                        </div><div class="salary_bar"><div class="avg_indicator" style="left:21.379310344828%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 2L
+                        </span><span class="max_value">
+                        ₹ 16.5L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/profile/sales-executive-salary'"><div class="slider_item"><div class="salary_wrap"><div class="salary_profile_wrap"><a href="profile/sales-executive-salary" title="Sales Executive Salary"><div class="salary_profile">Sales Executive Salary</div></a><div class="salary_count">(105.6k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:23.707317073171%">
+                            ₹ 2.2L
+                        </div><div class="salary_bar"><div class="avg_indicator" style="left:31.707317073171%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 0.9L
+                        </span><span class="max_value">
+                        ₹ 5L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/profile/senior-executive-salary'"><div class="slider_item"><div class="salary_wrap"><div class="salary_profile_wrap"><a href="profile/senior-executive-salary" title="Senior Executive Salary"><div class="salary_profile">Senior Executive Salary</div></a><div class="salary_count">(104.2k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:22.769230769231%">
+                            ₹ 4L
+                        </div><div class="salary_bar"><div class="avg_indicator" style="left:30.769230769231%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 2L
+                        </span><span class="max_value">
+                        ₹ 8.5L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/profile/team-lead-salary'"><div class="slider_item"><div class="salary_wrap"><div class="salary_profile_wrap"><a href="profile/team-lead-salary" title="Team Lead Salary"><div class="salary_profile">Team Lead Salary</div></a><div class="salary_count">(96.7k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:14.535211267606%">
+                            ₹ 5L
+                        </div><div class="salary_bar"><div class="avg_indicator" style="left:22.535211267606%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 1.8L
+                        </span><span class="max_value">
+                        ₹ 16L
+                        </span></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/profile/deputy-manager-salary'"><div class="slider_item"><div class="salary_wrap"><div class="salary_profile_wrap"><a href="profile/deputy-manager-salary" title="Deputy Manager Salary"><div class="salary_profile">Deputy Manager Salary</div></a><div class="salary_count">(92.8k salaries)</div></div></div><div class="salary_range"><div class="avg_value" style="padding-left:21.565217391304%">
+                            ₹ 6.9L
+                        </div><div class="salary_bar"><div class="avg_indicator" style="left:29.565217391304%"></div></div><div class="salary_value"><span class="min_value">
+                        ₹ 3.5L
+                        </span><span class="max_value">
+                        ₹ 15L
+                        </span></div></div></div></li></ul><div class="slider_btns slider_prev hidden_control"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div><div class="slider_btns slider_next"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div></div></div></section><section class="white_section"><div class="home_reviews"><div class="section_heading_wrap"><div class="titleCont"><h2 class="section_heading">Jobs</h2><p class="section_subheading">Explore jobs across India and know about the company's salary, employee reviews, interviews and benefits.</p></div><a href="/jobs" class="section_view_all"  title="View all Jobs">View all</a></div><div class="slider_wrap"><ul id="jobsSlider" class="slider_default"><li class="slider_item_wrap" onclick="window.location='/jobs/accenture-jobs?rid=naukri_010621907512'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/accenture.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    Practitioner <span>at Accenture Solutions Pvt Ltd</span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Gurgaon</span><span></span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>4-6 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                    Not Disclosed
+                                                                                            </span></p></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/jobs/ibm-jobs?rid=naukri_010621904927'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/ibm-global-services.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    Front end Developer <span>at IBM India Pvt. Limited</span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Ernakulam / Kochi/ Cochin</span><span></span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>4-8 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                    Not Disclosed
+                                                                                            </span></p></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/jobs/ireliance-jio-jobs?rid=naukri_010621501247'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/reliance-jio-infocomm.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    Team Lead <span>at Reliance Jio Infocomm Ltd.</span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Delhi</span><span></span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>4-6 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                    Not Disclosed
+                                                                                            </span></p></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/jobs/capgemini-jobs?rid=naukri_010621908550'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/capgemini.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    Solution Architect <span>at Capgemini Technology Services India Limited</span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Mumbai</span><span></span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>13-18 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                    Not Disclosed
+                                                                                            </span></p></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/jobs/tech-mahindra-jobs?rid=naukri_010621006023'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/techmahindra.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    Technology <span>at Tech Mahindra Ltd. </span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Visakhapatnam/Vizag</span><span></span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>4-9 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                    Not Disclosed
+                                                                                            </span></p></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/jobs/l-and-t-jobs?rid=naukri_020621000576'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/l-and-t.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    Manager <span>at LARSEN &amp; TOUBRO LIMITED </span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Vapi, </span><span>Bharuch</span><span> +1</span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>7-12 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                    Not Disclosed
+                                                                                            </span></p></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/jobs/amazon-jobs?rid=hirist_812226'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/amazon.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    Engineer <span>at Amazon</span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Bangalore</span><span></span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>5-8 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                    Not Disclosed
+                                                                                            </span></p></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/jobs/hcl-technologies-jobs?rid=naukri_010621009264'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/hcl-technologies-88.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    Order Manager <span>at HCL Technologies Limited   </span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Chennai</span><span></span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>2-7 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                                                                                                                                                                                        ₹ 2.5-5 LPA
+                                                                                            </span></p></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/jobs/genpact-jobs?rid=naukri_010621009409'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/genpact-india-pvt-limited.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    Full Stack Developer <span>at GENPACT India Private Limited </span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Pune</span><span></span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>4-9 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                    Not Disclosed
+                                                                                            </span></p></div></div></div></li><li class="slider_item_wrap" onclick="window.location='/jobs/infosys-jobs?rid=naukri_180521902127'"><div class="slider_item job_card"><div class="logo_cont"><img class="logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/infosys.jpg"
+                                onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt=" logo"/></div><div class="job_profile_wrap_new"><div class="job_profile_name">
+                                    PS Consultant <span>at Infosys Limited</span></div><div class="icon_locations"><i class="icon icon-location1"></i><p class="job_locations"><span>Bengaluru/Bangalore</span><span></span></p></div><div class="bottom_text"><p class="exp_range"><i class="icon icon-work"></i><span>2-5 Yrs</span></p><p class="sal_range"><i class="icon icon-wallet"></i><span>
+                                                                                                    Not Disclosed
+                                                                                            </span></p></div></div></div></li></ul><div class="slider_btns slider_prev hidden_control"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div><div class="slider_btns slider_next"><img src="https://static.ambitionbox.com/img/icons/down-arrow.svg" /></div></div></div></section><section class="white_section"><div class="home_reviews"><div class="section_heading_wrap"><div class="titleCont"><h2 class="section_heading">Over 455k companies</h2><p class="section_subheading">Get in depth information about companies. Know about their mission, vision, products, services and much more.</p></div><a href="/list-of-companies" class="section_view_all"  title="View all companies">View all</a></div><div id="companiesWrap"><div class="company_item"  onclick="window.location='/overview/tcs-overview'"><a href="/overview/tcs-overview" title="TCS"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/tcs.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="TCS logo"/></a></div><div class="company_item"  onclick="window.location='/overview/accenture-overview'"><a href="/overview/accenture-overview" title="Accenture"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/accenture.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Accenture logo"/></a></div><div class="company_item"  onclick="window.location='/overview/icici-bank-overview'"><a href="/overview/icici-bank-overview" title="ICICI Bank"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/icici_bank.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="ICICI Bank logo"/></a></div><div class="company_item"  onclick="window.location='/overview/cognizant-overview'"><a href="/overview/cognizant-overview" title="Cognizant"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/cognizant-technology-solutions.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Cognizant logo"/></a></div><div class="company_item"  onclick="window.location='/overview/hdfc-bank-overview'"><a href="/overview/hdfc-bank-overview" title="HDFC Bank"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/hdfc.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="HDFC Bank logo"/></a></div><div class="company_item"  onclick="window.location='/overview/wipro-overview'"><a href="/overview/wipro-overview" title="Wipro"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/wipro.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Wipro logo"/></a></div><div class="company_item"  onclick="window.location='/overview/capgemini-overview'"><a href="/overview/capgemini-overview" title="Capgemini"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/capgemini.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Capgemini logo"/></a></div><div class="company_item"  onclick="window.location='/overview/hcl-technologies-overview'"><a href="/overview/hcl-technologies-overview" title="HCL Technologies"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/hcl-technologies-88.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="HCL Technologies logo"/></a></div><div class="company_item"  onclick="window.location='/overview/tech-mahindra-overview'"><a href="/overview/tech-mahindra-overview" title="Tech Mahindra"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/techmahindra.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Tech Mahindra logo"/></a></div><div class="company_item"  onclick="window.location='/overview/infosys-overview'"><a href="/overview/infosys-overview" title="Infosys"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/infosys.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Infosys logo"/></a></div><div class="company_item"  onclick="window.location='/overview/vodafone-idea-overview'"><a href="/overview/vodafone-idea-overview" title="Vodafone Idea"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/vodafone-idea.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Vodafone Idea logo"/></a></div><div class="company_item"  onclick="window.location='/overview/genpact-overview'"><a href="/overview/genpact-overview" title="Genpact"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/genpact-india-pvt-limited.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Genpact logo"/></a></div><div class="company_item"  onclick="window.location='/overview/l-and-t-overview'"><a href="/overview/l-and-t-overview" title="L&amp;T"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/l-and-t.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="L&amp;T logo"/></a></div><div class="company_item"  onclick="window.location='/overview/axis-bank-overview'"><a href="/overview/axis-bank-overview" title="Axis Bank"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/axis_bank.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Axis Bank logo"/></a></div><div class="company_item"  onclick="window.location='/overview/ireliance-jio-overview'"><a href="/overview/ireliance-jio-overview" title="Reliance jio"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/reliance-jio-infocomm.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Reliance jio logo"/></a></div><div class="company_item"  onclick="window.location='/overview/ibm-overview'"><a href="/overview/ibm-overview" title="IBM"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/ibm-global-services.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="IBM logo"/></a></div><div class="company_item"  onclick="window.location='/overview/concentrix-corporation-overview'"><a href="/overview/concentrix-corporation-overview" title="Concentrix Corporation"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/concentrix-corporation.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Concentrix Corporation logo"/></a></div><div class="company_item"  onclick="window.location='/overview/hdb-financial-services-overview'"><a href="/overview/hdb-financial-services-overview" title="HDB Financial Services"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/hdb-financial-services-6193.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="HDB Financial Services logo"/></a></div><div class="company_item"  onclick="window.location='/overview/amazon-overview'"><a href="/overview/amazon-overview" title="Amazon"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/amazon.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Amazon logo"/></a></div><div class="company_item"  onclick="window.location='/overview/kotak-mahindra-bank-overview'"><a href="/overview/kotak-mahindra-bank-overview" title="Kotak Mahindra Bank"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/kotak-mahindra-bank.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Kotak Mahindra Bank logo"/></a></div><div class="company_item"  onclick="window.location='/overview/tata-motors-overview'"><a href="/overview/tata-motors-overview" title="Tata Motors"><img class="company_logo" src="https://static.ambitionbox.com/alpha/company/photos/logos/tata-motors.jpg" onerror="this.onerror=null;this.src='https://static.ambitionbox.com/static/icons/company-placeholder.svg';" alt="Tata Motors logo"/></a></div></div></div></section><section class="ambox_branding_wrap"><div class="ambox_branding_content_wrap"><div class="ambox_branding_content"><p class="ambox_branding_title"> Why AmbitionBox Community</p><div class="ambox_features_wrap"><div class="ambox_feature"><span class="icon-Star-icon"></span><p class="ambox_feature_title"> Make An Impact</p><span class="ambox_feature_text"> What you share reaches thousand others. Help them make informed decisions.</span></div><div class="ambox_feature"><span class="icon-Be-anonymous-icon"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span><p class="ambox_feature_title"> Be Anonymous</p><span class="ambox_feature_text"> We never display your email ID or your personal information to other users. You can choose to hide identity.</span></div><div class="ambox_feature"><span class="icon-Know-inside-culture-icon"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></span><p class="ambox_feature_title"> Know Inside Culture</p><span class="ambox_feature_text"> Read reviews and prepare for interviews shared by employees and know inside culture.</span></div></div></div></div></section><section class="tool_wrap"><div class="page-wrap"><section class="ambox_tool_wrap" onclick="window.location='/topics/aptitude/questions-and-answers'"><div class="ambox_tool_content_wrap"><div class="ambox_tools_content"><div class="icon_circle_wrap"><div class="icon_circle"><i class="icon-Prac-test-icon"></i></div></div><div class="ambox_tool_text_wrap"><p class="ambox_tool_title"> Practice Test</p><span class="ambox_tool_text"> Practice aptitude questions asked in interviews.</span><p  class="link"><a href="https://www.ambitionbox.com/topics/aptitude/questions-and-answers"> Practice Questions</a>&nbsp; <i class="icon-right-arrow"></i></p></div></div></div></section><section class="ambox_tool_wrap mobile_fix" style="border: none;" onclick="window.location='/salaries/take-home-salary-calculator'"><div class="ambox_tool_content_wrap"><div class="ambox_tools_content" style="float: right;"><div class="icon_circle_wrap"><div class="icon_circle"><i class="icon-Salary-cal-icon"></i></div></div><div class="ambox_tool_text_wrap"><p class="ambox_tool_title"> Salary Calculator</p><span class="ambox_tool_text"> Calculate your inhand salary with our tool.</span><p class="link"><a href="https://www.ambitionbox.com/salaries/take-home-salary-calculator"> Salary Calculator</a>&nbsp; <i class="icon-right-arrow"></i></p></div></div></div></section></div></section><div id="notification-block"><div id="mainNotification" class="main-notification"><div id="message"></div></div></div><section class="login-popup" id="loginPopup"><div class="login-box"><a onclick="loginPopOut()" class="close"><i class="icon-close"></i></a><div class="login-content"><div class="title"><div class="headline">Login/Signup</div><div class="sub-text">1 step login. Get unlimited access!</div></div><div class="right-part"><a href='#' link='/login/facebook' class='js-login login-facebook'><div class="icon"><i class="icon-facebook22"></i></div><div>Continue with Facebook</div></a><a href='#' link='/login/linkedin' class='js-login login-linkedin'><div class="icon"><i class="icon-linkedin2"></i></div><div>Continue with Linkedin</div></a><a href="#" class="customGPlusSignIn login-google" id="googleLoginBtn" data-onsuccess="onSignIn" ><div class="icon"><i class="icon-google3"></i></div><div>Continue with Google</div></a></div><div class="foot-note"><div style="display: none;" class="js-disclaimer-error">
+					* Please agree to our terms and condtions
+				</div><div class="foot-note-text"><input type="checkbox" name="ReadDisclaimer1" class="custom-checkbox" id="ReadDisclaimer1" value="ReadDisclaimer1" checked /><label for="ReadDisclaimer1"><span>I have read and agreed to the <a href="/legal/community-guidelines" target="_blank">community guidelines</a>, <a href="/legal/terms-of-use" target="_blank">terms of use</a> and <a href="/legal/privacy-policy" target="_blank">privacy policy</a>.</span></label></div></div></div></div><div 
+      id="g_id_onload"
+      data-client_id="462822053404-hphug4pkahqljh2tc96g35at47o4isv2.apps.googleusercontent.com"
+	  data-callback="gooleYoloLogin"
+      data-skip_prompt_cookie="usr_data"
+    ></div><script src="https://accounts.google.com/gsi/client" async defer></script></section><section class="personalise-popup" id="personalisePopup"><div class="personalise-box" id="personalise-box"><a onclick="personalisePopOut()" class="close"><i class="icon-close"></i></a><div id="progress_bar"></div><div class="ab_user_details modal-wrap" id="page1"><div class="modal_heading">
+		Help us personalise your experience
+	</div><div class="modal_body"><p class="subheading">Are you a student or working professional?</p><div class="cards-wrap"><div class="card fresher marginFix" onclick="onClickFresher()"><img class="img" src="https://static.ambitionbox.com/static/icons/fresher.svg"/><div><p class="card-heading">Student/Never worked</p><p class="sub-text">I am a student/I have never worked</p></div></div><div class="card working" onclick="onClickProf()"><img class="img" src="https://static.ambitionbox.com/static/icons/professional.svg"/><div><p class="card-heading">Working Professional</p><p class="sub-text">I am working/I have worked before</p></div></div></div><form id="user-input-form" autocomplete="off"><div class="input-group" id="input_JobProfileName"><input type="text" id="JobProfileName" oninput="validateField('JobProfileName', 'Current Designation')" onfocus="validateField('JobProfileName', 'Current Designation')" onblur="validateField('JobProfileName', 'Current Designation')" class="input-control" placeholder=" " required oninvalid="setCustomValidity(' ')" onchange="setCustomValidity('')"><label for="JobProfileName" class="input-control-placeholder">Current Designation</label></div><div class="input-group" id="input_UserCompanyName"><input type="text" id="UserCompanyName" oninput="validateField('UserCompanyName', 'Current/Recent company')" onfocus="validateField('UserCompanyName', 'Current/Recent company')" onblur="validateField('UserCompanyName', 'Current/Recent company')" class="input-control" placeholder=" " required oninvalid="setCustomValidity(' ')" onchange="setCustomValidity('')"><label for="UserCompanyName" class="input-control-placeholder">Current/Recent company</label></div><div class="form-group"><span class="exp-title">Total years of work experience</span><div class="chips-wrap"><a class="chip exp_0" onclick="onClickExp('0')" id="userExp">0-1 yr</a><a class="chip exp_1" onclick="onClickExp('1')" id="userExp">1+ yr</a><a class="chip exp_2" onclick="onClickExp('2')" id="userExp">2+ yrs</a><a class="chip exp_3" onclick="onClickExp('3')" id="userExp">3+ yrs</a><a class="chip exp_4" onclick="onClickExp('4')" id="userExp">4+ yrs</a><a class="chip exp_5" onclick="onClickExp('5')" id="userExp">5+ yrs</a><a class="chip exp_6" onclick="onClickExp('6')" id="userExp">6+ yrs</a><a class="chip exp_7" onclick="onClickExp('7')" id="userExp">7+ yrs</a><a class="chip exp_8" onclick="onClickExp('8')" id="userExp">8+ yrs</a><a class="chip exp_9" onclick="onClickExp('9')" id="userExp">9+ yrs</a><a class="chip exp_10-15" onclick="onClickExp('10-15')" id="userExp">10-15 yrs</a><a class="chip exp_15-20" onclick="onClickExp('15-20')" id="userExp">15-20 yrs</a><a class="chip exp_20" onclick="onClickExp('20')" id="userExp">20+ yrs</a></div></div><div class="modal_footer"><input onclick="onSubmitProfessional()" type="button" class="modal-next-btn" data-count="1" value="Next"/></div></form></div><div class="footer"><a class="later" onclick="personalisePopOut()">I’ll personalise later</a></div></div><div class="ab_preferred_loc hide modal-wrap" id="page2"><a class="modal-default-button left" onclick="goTo('prev')" id="prev"><img src="https://static.ambitionbox.com/static/icons/nav_arrow_back.svg"/></a><p class="modal_heading">What are your preferred job locations?</p><form autocomplete="off" id="user-search-form"><div class="input-group" id="input_UserJobLocation"><input type="text" id="UserJobLocation" oninput="validateField('UserJobLocation', 'Search locations')" onfocus="validateField('UserJobLocation', 'Search locations')" onblur="validateField('UserJobLocation', 'Search locations')" class="input-control" placeholder=" "  oninvalid="setCustomValidity(' ')" onchange="setCustomValidity('')"><label for="UserJobLocation" class="input-control-placeholder">Search locations</label></div><div id="selectedCities" class="chips-wrap"></div><p id="popular-heading" class="sbold-list-header heading">Popular Cities</p><div id="popularCities" class="chips-wrap"></div><p id="other-heading" class="sbold-list-header heading">Other Cities</p><div id="otherCities" class="chips-wrap"></div><div class="modal_footer"><input onclick="onSubmitLocations()" type="button" class="modal-next-btn" data-count="1" /></div></form></div><div class="ab_preferred_profiles hide modal-wrap" id="page3"><a class="modal-default-button left" onclick="goTo('prev')" id="prev"><img src="https://static.ambitionbox.com/static/icons/nav_arrow_back.svg"/></a><p class="modal_heading">Follow your preferred designations/job profiles</p><form autocomplete="off" id="suggest-profile"><div class="input-group" id="input_SuggestedProfiles"><input type="text" id="SuggestedProfiles" oninput="validateField('SuggestedProfiles', 'Search job profile')" onfocus="validateField('SuggestedProfiles', 'Search job profile')" onblur="validateField('SuggestedProfiles', 'Search job profile')" class="input-control" placeholder=" "  oninvalid="setCustomValidity(' ')" onchange="setCustomValidity('')"><label for="SuggestedProfiles" class="input-control-placeholder">Search job profile</label></div><div id="selectedProfiles" class="chips-wrap"></div><p id="profile-heading" class="sbold-list-header heading">Suggestions based on your job profile</p><div id="suggestedProfiles" class="chips-wrap"></div><div class="modal_footer"><input onclick="onSubmitProfiles()" type="button" class="modal-next-btn" data-count="1" /></div></form></div><div class="ab_follow_companies hide modal-wrap" id="page4"><a class="modal-default-button left" onclick="goTo('prev')" id="prev"><img src="https://static.ambitionbox.com/static/icons/nav_arrow_back.svg"/></a><div class="modal_heading">
+		Follow companies & be the first one to receive jobs, reviews and updates
+	</div><div class="companies-wrap recommended"></div><div class="companies-wrap topPaying"></div><div class="companies-wrap mnc"></div><div class="companies-wrap startup"></div><div class="modal_footer"><input onclick="personalisePopOut()" type="button" class="personalise-btn" id="personalise-btn" /></div></div></div></section><footer class="footer_wrap"><div class="footer_links_content"><div class="info"><div class="logo_wrap"><img src="https://static.ambitionbox.com/static/logo.svg" onerror="this.onerror = null;this.src='https://static.ambitionbox.com/img/AB_logo_new.svg';"/><span class="logo_text">AmbitionBox</span></div><p class="title">Helping over 3.5 million job seekers every month in choosing their right fit company</p><div class="col"><div class="item"><span>27 Lakh+</span><p>Reviews</p></div><div class="item"><span>90 Lakh+</span><p>Salaries</p></div><div class="item"><span>1 Lakh+</span><p>Interviews</p></div><div class="item"><span>35 Lakh+</span><p>Users/month</p></div></div></div><div class="search_new"><form action="/search" id="footerSearch" class="searchForm"><div class="search-input-wrapper"><input class="search_company_input js-menu-search" name="CompanyName" type="search" title="Enter a Company or Designation" placeholder="Search by Company or Designation" onblur="this.placeholder = 'Search by Company or Designation'" autocomplete="off"></div><select style="border-radius:0px 0px;" class="select"><option value="CompanyReview">Reviews</option><option value="CompanyJobs" >Jobs</option><option value="InterviewPrep" >Interview Questions</option><option value="CompanyInfo" >About Company</option><option value="CompanySalaries" >Salaries</option><option value="CompanyBenefits" >Benefits</option></select><input type="submit" name="submit" class="blue-btn-small" value="Search" onclick="formValidation(this,event);"></form></div><div class="quick_links_wrap"><p>Users/Jobseekers</p><div class="quick_links"><div class="quick_link"><a href="/list-of-companies">Companies</a></div><div class="quick_link"><a href="/reviews">Reviews</a></div><div class="quick_link"><a href="/salaries">Salaries</a></div><div class="quick_link"><a href="/jobs">Jobs<span class="badge-orange awards">New</span></a></div><div class="quick_link"><a href="/interviews">Interviews</a></div><div class="logged-in quick_link"><a href="/user-settings">Manage Preferences</a></div><div class="quick_link"><a href="/best-places-to-work-in-india-2021">Best Places to Work 2021<span class="badge-orange awards">New</span></a></div><div class="quick_link"><a href="/salaries/take-home-salary-calculator">Salary Calculator</a></div><div class="quick_link"><a href="/topics/aptitude/questions-and-answers">Practice Test
+					</a></div></div></div><div class="quick_links_wrap"><p>Employers</p><div class="quick_links"><div class="quick_link"><a href="https://employer.ambitionbox.com">Create a new company</a></div><div class="quick_link"><a href="https://employer.ambitionbox.com/company-page">Update company information</a></div><div class="quick_link"><a href="https://employer.ambitionbox.com/review-management">Respond to reviews</a></div><div class="quick_link"><a href="/employer/sendemail">Invite employees to review</a></div></div></div><div class="quick_links_wrap"><p>AmbitionBox</p><div class="quick_links"><div class="quick_link"><a href="/about-us">About</a></div><div class="quick_link"><a href="mailto:hi@ambitionbox.com?Subject=Query">Email Us</a></div><div class="quick_link"><a href="https://www.ambitionbox.com/unboxed">Blog</a></div><div class="quick_link"><a href="https://www.ambitionbox.com/faq" target="_blank">FAQ</a></div></div></div><div class="quick_links_wrap"><p>Support</p><div class="quick_links"><div class="quick_link"><a href="https://www.ambitionbox.com/legal/privacy-policy" target="_blank">Privacy Policy
+					</a></div><div class="quick_link"><a href="https://www.ambitionbox.com/legal/grievances" target="_blank">Grievances
+					</a></div><div class="quick_link"><a href="https://www.ambitionbox.com/legal/summons-notice-form" target="_blank">Summons/Notices</a></div><div class="quick_link"><a href="https://www.ambitionbox.com/legal/community-guidelines" target="_blank">Community Guidelines
+					</a></div><div class="quick_link"><a href="https://www.ambitionbox.com/legal/terms-of-use" target="_blank">Terms of Use
+					</a></div></div></div><div class="quick_btns_wrap"><p>Follow Us</p><div class="social"><a href="https://bit.ly/3b4QqEJ" target="_blank" rel="nofollow"><img src="https://static.ambitionbox.com/static/icons/social/instagram-logo.svg" width="24" height="24"/></a><a href="https://bit.ly/2W42b9V " target="_blank" rel="nofollow"><img src="https://static.ambitionbox.com/static/icons/social/linkedin-logo.svg" width="24" height="24"/></a><a href="https://bit.ly/2YzmnCf" target="_blank" rel="nofollow"><img src="https://static.ambitionbox.com/static/icons/social/fb-logo.svg" width="24" height="24"/></a><a href="https://bit.ly/35wg97E" target="_blank" rel="nofollow"><img src="https://static.ambitionbox.com/static/icons/social/twitter-logo.svg" width="24" height="24"/></a></div><p>Contribute</p><a href="/contribute/company-review"><button class="btn">Write Company Review</button></a><a href="/contribute/interview-story"><button class="btn interview">Write Interview Advice</button></a></div></div><div class="copy_right_wrap"><p>Made with
+			<span class="heart">❤</span>
+			in India. Trademarks belong to their respective owners. All rights reserved © 2021 Info Edge (India) Ltd.</p></div></footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/typeahead.bundle.min.js"></script><script src="https://apis.google.com/js/platform.js" async defer></script><script src="https://static.ambitionbox.com/js/concatinated/common.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script><script src="https://static.ambitionbox.com/js/concatinated/home_page_v2.js"></script></body>
 </html>
