@@ -8,23 +8,73 @@
 <body>
     <div>
         <h1>Native share Demo</h1>
-        <button onclick="nativeshare()">Click me</button>
+        <img src="https://static.ambitionbox.com/alpha/company/photos/awards/share-img/mega-114.jpg" width="800" height="400" alt="">
+        <br>
+        <br>
+        <br>
+        <button onclick="nativeshare()">Click me to share</button>
     </div>
     <script>
+        let url = 'https://static.ambitionbox.com/alpha/company/photos/awards/share-img/mega-114.jpg',
+        fileArr = [];
+
         function nativeshare(){
-        if (navigator.share) {
-            navigator.share({
-                title: 'AmbitionBox Great Places to Work In India 2021',
-                text:'Hindustan Unilever is recognized as 3rd Best Large Company to Work in India - 2021 by AmbitionBox!',
-                url:'https://www.ambitionbox.com/awards/best-large-companies-to-work-in-india-2021',
-            })
-                .then(() => alert('Successful share'))
-                .catch((error) => alert('Error sharing', error));
+
+            //Here is the code for converting "image source" (url) to "Base64".
+            const toDataURL = url => fetch(url)
+                .then(response => response.blob())
+                .then(blob => new Promise((resolve, reject) => {
+                    const reader = new FileReader()
+                    reader.onloadend = () => resolve(reader.result)
+                    reader.onerror = reject
+                    reader.readAsDataURL(blob)
+                }));
+
+
+            // Here is code for converting "Base64" to javascript "File Object".
+            function dataURLtoFile(dataurl, filename) {
+                var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+                bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+                while(n--){
+                    u8arr[n] = bstr.charCodeAt(n);
+                }
+                return new File([u8arr], filename, {type:mime});
             }
-        else
-            alert('native share not avialable');
+
+
+            // Calling both function 
+            toDataURL(url)
+            .then(dataUrl => {
+                console.log('Here is Base64 Url', dataUrl)
+                var fileData = dataURLtoFile(dataUrl, "imageName.jpg");
+                console.log("Here is JavaScript File Object",fileData)
+                fileArr.push(fileData)
+                triggerNativeShare(fileArr);
+            }).catch(err => {
+                console.error(err);
+                triggerNativeShare();
+            })
+        }
+
+        function triggerNativeShare(fileArr){
+            if (navigator.share) {
+                let shareObj = {
+                    title: 'AmbitionBox Great Places to Work In India 2021',
+                    text:'Hindustan Unilever is recognized as 3rd Best Large Company to Work in India - 2021 by AmbitionBox!',
+                    url:'https://www.ambitionbox.com/awards/best-large-companies-to-work-in-india-2021',
+                };
+
+                if(fileArr && fileArr.length>0 && navigator.canShare({ files: fileArr })){
+                    shareObj.files = fileArr;
+                } 
+
+                navigator.share(shareObj)
+                    .then(() => console.log('Successful share'))
+                    .catch((error) => console.log('Error sharing', error));
+                }
+            else
+                alert('native share not avialable');
         }
     </script>
 </body>
 </html>
-{"mode":"full","isActive":false}
