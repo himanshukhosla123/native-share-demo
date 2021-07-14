@@ -8,14 +8,14 @@
 <body>
     <div>
         <h1>Native share Demo</h1>
-        <img src="https://static.ambitionbox.com/alpha/company/photos/awards/share-img/mega-114.jpg" width="800" height="400" alt="">
+        <img src="mega.jpg" width="800" height="400" alt="" style="width: 100%; max-width: 800px;">
         <br>
         <br>
         <br>
         <button onclick="nativeshare()">Click me to share</button>
     </div>
     <script>
-        let url = 'https://static.ambitionbox.com/alpha/company/photos/awards/share-img/mega-114.jpg',
+        let url = window.origin + location.pathname + '/mega-114.jpg',
         fileArr = [];
 
         function nativeshare(){
