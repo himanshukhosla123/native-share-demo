@@ -9,13 +9,16 @@
 <body>
     <h1>Webview Call back name</h1>
     <h3>Callback Name: 'demoCallBack'</h3>
-    <h4>Callback 2 Name: 'demoCallBack2'</h4>
+    <h4>Callback 2 Name: 'demoCallBackWithJson'</h4>
+    <br/>
+    <h5></h5>
     <script>
         function demoCallBack() {
             alert('callback called on webview close');
         }
-        function demoCallBack2() {
-            alert('2nd callback called from webview');
+        function demoCallBackWithJson(json) {
+            document.querySelector('h5').innerHTML = JSON.stringify(json);
+            alert('2nd callback called from webview with json');
         }
     </script>
 </body>
