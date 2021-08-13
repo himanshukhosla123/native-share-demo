@@ -2,60 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NATIVE SHARE DEMO</title>
+    <title>Webview call back demo</title>
 </head>
 <body>
-    <div>
-        <h1>Native share Demo</h1>
-        <p>Img Url - https://himanshukhosla123.github.io/native-share-demo/mega.jpg</p>
-        <br/>
-        <button onclick="nativeshare()">Click me to share</button>
-    </div>
+    <h1>Webview Call back name</h1>
+    <h3>Callback Name: 'demoCallBack'</h3>
+    <h4>Callback 2 Name: 'demoCallBack2'</h4>
     <script>
-        let url = window.origin + location.pathname + 'mega.jpg',
-        fileArr = [];
-
-        function nativeshare(){
-
-            //Here is the code for converting "image source" (url) to "Base64".
-            const toDataURL = url => fetch(url)
-                .then(response => response.blob())
-
-
-            // Calling both function 
-            toDataURL(url)
-            .then(blob => {
-                var fileData = new window.File([blob], "mega.jpg",{
-                    type:'image/jpeg'
-                });
-                console.log("Here is JavaScript File Object",fileData)
-                fileArr.push(fileData)
-                triggerNativeShare(fileArr);
-            }).catch(err => {
-                console.error(err);
-                triggerNativeShare();
-            })
+        function demoCallBack() {
+            alert('callback called on webview close');
         }
-
-        function triggerNativeShare(fileArr){
-            if (navigator.share) {
-                let shareObj = {
-                    title: 'AmbitionBox Great Places to Work In India 2021',
-                    text:'Hindustan Unilever is recognized as 3rd Best Large Company to Work in India - 2021 by AmbitionBox!',
-                    url:'https://www.ambitionbox.com/awards/best-large-companies-to-work-in-india-2021',
-                };
-
-                if(fileArr && fileArr.length>0 && navigator.canShare({ files: fileArr })){
-                    shareObj.files = fileArr;
-                } 
-
-                navigator.share(shareObj)
-                    .then(() => console.log('Successful share'))
-                    .catch((error) => console.log('Error sharing', error));
-                }
-            else
-                alert('native share not avialable');
+        function demoCallBack2() {
+            alert('2nd callback called from webview');
         }
     </script>
 </body>
