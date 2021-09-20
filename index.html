@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webview call back demo</title>
-</head>
-<body>
-    <h1>Webview Call back name</h1>
-    <h3>Callback Name: 'demoCallBack'</h3>
-    <h4>Callback 2 Name: 'demoCallBackWithJson'</h4>
-    <br/>
-    <h5></h5>
-    <script>
-        function demoCallBack() {
-            alert('callback called on webview close');
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>Cross Site Iframe Demo</h1>
+  
+      <div class="box">
+        <h3>Main Site Url (current)</h3>
+        <br />
+        <input
+          type="text"
+          name="demo"
+          placeholder="enter text to test"
+          id="search"
+        />
+        <button onclick="sendToIframe()">Send to iframe</button>
+        <button onclick="getCookies()">Get Cookies of iframe</button>
+      </div>
+      <div class="box">
+        <h3>Iframe Url (naukrigulf)</h3>
+        <br />
+        <h4>Received Message</h4>
+        <p id="received"></p>
+        <br />
+        <h4>Preview</h4>
+        <iframe
+          name="otherSite"
+          ref="iframe"
+          src="https://www.naukrigulf.com/?qhdgsm12=1"
+          height="300px"
+        ></iframe>
+      </div>
+    </div>
+
+  <script>
+    window.onload = function() {
+      window.addEventListener('message', (event) => {
+        console.log(event.data);
+        if (event.origin != 'https://www.naukrigulf.com') {
+          // something from an unknown domain, let's ignore it
+          return;
         }
-        function demoCallBackWithJson(json) {
-            document.querySelector('h5').innerHTML = JSON.stringify(json);
-            alert('2nd callback called from webview with json');
-        }
-    </script>
+
+        alert('Received message from iframe');
+
+        document.getElementById('received').innerHTML = event.data;
+      });
+    }
+    
+    function sendToIframe() {
+      let customText = document.getElementById('search').value;
+			alert('Message sent to iframe');
+			window.frames.otherSite.postMessage(customText, 'https://www.naukrigulf.com');
+		}
+
+		function getCookies() {
+			sendToIframe('cookies');
+		}
+  </script>
 </body>
 </html>
+
