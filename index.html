@@ -62,16 +62,18 @@
 			let allCookies = {};
 			for (let i = pairs.length - 1; i >= 0; i--) {
 				let pair = pairs[i].split('=');
+        allCookies[pair[0]] = pair[1];
 			}
 
+      console.log(allCookies);
+
       if (allCookies.currentLoggedIn) {
-        document.getElementById('currentLogin').innerHTML = `<strong>Current Login:</strong> ${new Date(allCookies.currentLoggedIn)}`;
+        document.getElementById('currentLogin').innerHTML = `<strong>Current Login:</strong> ${new Date(parseFloat(allCookies.currentLoggedIn))}`;
       }
 
       if (allCookies.previousLoggedIn) {
-        document.getElementById('lastlogin').innerHTML = `<strong>Last Login:</strong> ${new Date(allCookies.previousLoggedIn)}`;
+        document.getElementById('lastlogin').innerHTML = `<strong>Last Login:</strong> ${new Date(parseFloat(allCookies.previousLoggedIn))}`;
       }
-
     }
     
     function sendToIframe() {
