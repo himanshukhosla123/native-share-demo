@@ -28,6 +28,8 @@
         <br />
         <h4>Received Message</h4>
         <p id="received"></p>
+        <p id="lastlogin"></p>
+        <p id="currentLogin"></p>
         <br />
         <h4>Preview</h4>
         <iframe
@@ -51,7 +53,25 @@
         alert('Received message from iframe');
 
         document.getElementById('received').innerHTML = event.data;
+        formatTime(event.data);
       });
+    }
+
+    function formatTime(str) {
+      let pairs = str.split(';');
+			let allCookies = {};
+			for (let i = pairs.length - 1; i >= 0; i--) {
+				let pair = pairs[i].split('=');
+			}
+
+      if (allCookies.currentLoggedIn) {
+        document.getElementById('currentLogin').innerHTML = `<strong>Current Login:</strong> ${new Date(allCookies.currentLoggedIn)}`;
+      }
+
+      if (allCookies.previousLoggedIn) {
+        document.getElementById('lastlogin').innerHTML = `<strong>Last Login:</strong> ${new Date(allCookies.previousLoggedIn)}`;
+      }
+
     }
     
     function sendToIframe() {
