@@ -41,6 +41,8 @@
         ></iframe>
       </div>
     </div>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
   <script>
     window.onload = function() {
@@ -51,11 +53,18 @@
           return;
         }
 
-        alert('Received message from iframe');
+        showToast('Received message from iframe');
 
         document.getElementById('received').innerHTML = event.data;
         formatTime(event.data);
       });
+    }
+
+    function showToast(text){
+        Toastify({
+            text: text,
+            duration: 3000
+        }).showToast();
     }
 
     function formatTime(str) {
@@ -79,7 +88,7 @@
     
     function sendToIframe() {
       let customText = document.getElementById('search').value;
-			alert('Message sent to iframe');
+            showToast('Message sent to iframe');
 			window.frames.otherSite.postMessage(customText, 'https://www.naukrigulf.com');
 		}
 
@@ -89,4 +98,3 @@
   </script>
 </body>
 </html>
-
