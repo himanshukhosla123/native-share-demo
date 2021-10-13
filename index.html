@@ -96,5 +96,23 @@
 			sendToIframe('cookies');
 		}
   </script>
+	  <script>
+var payload = {
+  tenantId: "1",
+  eventName: "trackCookie",
+  clientTenantId: "99",
+  pageName: "somePage",
+  appId: 705,
+  deviceType: "WEB",
+  timestamp: Date.now()
+};
+var tdsXhr = new XMLHttpRequest();
+tdsXhr.open("POST", "https://logs.infoedgeindia.com/collectorapi/v1/uba");
+tdsXhr.setRequestHeader("Accept", "*/*");
+tdsXhr.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+tdsXhr.withCredentials = true;
+tdsXhr.send(JSON.stringify(payload));
+tdsXhr.addEventListener("load", function () {});
+	  </script>
 </body>
 </html>
